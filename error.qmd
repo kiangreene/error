@@ -1,0 +1,24 @@
+---
+title: "error"
+format: html
+editor: visual
+---
+
+## Baby's first quarto doc
+
+Test for error
+
+```{r}
+f <- function() g()
+g <- function() h()
+h <- function() i()
+i <- function() stop("Error. it works")
+```
+
+You can add options to executable code like this
+
+```{r}
+f()
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
